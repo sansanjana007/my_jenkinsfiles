@@ -1,5 +1,7 @@
 pipeline {
-    agent any // Runs the pipeline on any available agent (node)
+agent {
+  label 'jenkins-1'
+}
     stages {
         stage('Hello') { // Defines a stage named 'Hello'
             steps {
